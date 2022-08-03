@@ -1,6 +1,14 @@
 package Assinment_array
 
-fun multiplyMatrices(firstMatrix: Array <IntArray>, secondMatrix: Array <IntArray>, r1: Int, c1: Int, c2: Int): Array <IntArray> {
+fun main(args: Array<String>) {
+    val r1 = 2
+    val c1 = 3
+    val r2 = 3
+    val c2 = 2
+    val firstMatrix = arrayOf(intArrayOf(3, -2, 5), intArrayOf(3, 0, 4))
+    val secondMatrix = arrayOf(intArrayOf(2, 3), intArrayOf(-9, 0), intArrayOf(0, 4))
+
+    // Mutliplying Two matrices
     val product = Array(r1) { IntArray(c2) }
     for (i in 0..r1 - 1) {
         for (j in 0..c2 - 1) {
@@ -10,11 +18,7 @@ fun multiplyMatrices(firstMatrix: Array <IntArray>, secondMatrix: Array <IntArra
         }
     }
 
-    return product
-}
-
-
-fun displayProduct(product: Array <IntArray>) {
+    // Displaying the result
     println("Product of two matrices is: ")
     for (row in product) {
         for (column in row) {
@@ -23,20 +27,3 @@ fun displayProduct(product: Array <IntArray>) {
         println()
     }
 }
-
-fun main() {
-    val r1 = 2
-    val c1 = 3
-    val r2 = 3
-    val c2 = 2
-    val firstMatrix = arrayOf(intArrayOf(3, -2, 5), intArrayOf(3, 0, 4))
-    val secondMatrix = arrayOf(intArrayOf(2, 3), intArrayOf(-9, 0), intArrayOf(0, 4))
-
-    // Mutliplying Two matrices
-    val product = multiplyMatrices(firstMatrix, secondMatrix, r1, c1, c2)
-
-    // Displaying the result
-    displayProduct(product)
-}
-
-
