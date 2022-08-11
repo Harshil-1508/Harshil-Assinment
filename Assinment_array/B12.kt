@@ -1,6 +1,6 @@
 package Assinment_array
 
-fun main(args: Array<String>) {
+fun main() {
     val ch = 'c'
     val st = Character.toString(ch)
 

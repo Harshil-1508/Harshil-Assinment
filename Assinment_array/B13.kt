@@ -1,6 +1,6 @@
 package Assinment_array
 
-fun main(args: Array<String>) {
+fun main() {
 
     val num = intArrayOf(1, 2, 3, 4, 5)
     val toFind = 3
